@@ -13,7 +13,7 @@
             <div class="navbar-start pl-10 ">
              
              
-              <button class="btn   bg-lime-400 text-center   ">Blog</button>
+              <button class="btn   bg-lime-400 text-center   "><a href="https://www.w3schools.com" target="_blank">blog</a></button>
              
             </div>
             <div class="navbar-center">
@@ -24,7 +24,7 @@
              
             <div class="navbar-end ">
            <img src="assets/coin.png">
-           <p class="pl-3">5500 BDT</p>
+           <p class="pl-3" id="crntamnt">5500 </p><p> &nbsp;BDT</p>
             </div>
           </div>
           </section>
@@ -41,17 +41,29 @@
                 <div class="card-body">
                    <div class="flex ">
                     <img src="assets/coin.png">
-                    <p class="pl-2">0 BDT</p>
+                    <p class="pl-2" id="donamnt">0 BDT</p>
                    </div>
                   <h2 class="card-title text-4xl"> Donate for Flood at Noakhali</h2>
                   <p class="text-wrap">The flood situation in Noakhali has worsened on Saturday<br> following the continuous heavy rainfall for last two days across the district.<br> Among the district's nine upazilas, eight have seen a rise in floodwaters, with Senbagh,<br> Begumganj, Sadar, Sonaimuri, and Chatkhil upazilas being the hardest hit. </p>
                
-                  <button class="btn btn-block text-start">Donate write Amount </button>
+               
+                  <p>Enter amount:</p><input id="taka" type="number">
                 
                    
                   <div>
                       
-                  <a href="#my_modal_8" class="btn bg-lime-400 text-center">Donate Now</a>
+                  <a href="#my_modal_8" class="btn bg-lime-400 text-center" onclick="fundChange()">Donate Now</a>
+                  <script>
+                    function fundChange() {
+                      
+                      document.getElementById("donamnt").innerHTML = document.getElementById("taka").value + " BDT";
+                      let asd = document.getElementById("donamnt").value;
+                      var cramt = document.getElementById("crntamnt").innerHTML
+                      document.getElementById("crntamnt").innerHTML = parseInt(cramt) - parseInt(document.getElementById("taka").value) ;
+
+
+                    }
+                  </script>
 
  
                     <div class="modal" role="dialog" id="my_modal_8">
@@ -77,20 +89,34 @@
                 <div class="card-body">
                    <div class="flex ">
                     <img src="assets/coin.png">
-                    <p class="pl-2">0 BDT</p>
+                    <p class="pl-2" id="donamnt1">0 BDT</p>
                    </div>
                   <h2 class="card-title text-4xl"> Donate for Flood Relief in Feni,Bangladesh</h2>
                   <p class="text-wrap">The flood situation in Noakhali has worsened on Saturday<br> following the continuous heavy rainfall for last two days across the district.<br> Among the district's nine upazilas, eight have seen a rise in floodwaters, with Senbagh,<br> Begumganj, Sadar, Sonaimuri, and Chatkhil upazilas being the hardest hit. </p>
                
-                  <button class="btn btn-block text-start">Donate write Amount </button>
+                   
+                  <p>Enter amount:</p><input id="taka1" type="number">
+                  
+
                 
                    
                   <div>
                       
-                  <a href="#my_modal_8" class="btn bg-lime-400 text-center">Donate Now</a>
+                  <a href="#my_modal_6" class="btn bg-lime-400 text-center"  onclick="fundChange1()">Donate Now</a>
+                  <script>
+                    function fundChange1() {
+                      
+                      document.getElementById("donamnt1").innerHTML = document.getElementById("taka1").value + " BDT";
+                      let asd = document.getElementById("donamnt1").value;
+                      var cramt = document.getElementById("crntamnt").innerHTML
+                      document.getElementById("crntamnt").innerHTML = parseInt(cramt) - parseInt(document.getElementById("taka1").value) ;
+
+
+                    }
+                  </script>
 
  
-                    <div class="modal" role="dialog" id="my_modal_8">
+                    <div class="modal" role="dialog" id="my_modal_6">
                    <div class="modal-box">
                    <h3 class=" font-bold text-center text-5xl">Congrates</h3><br>
                    <img class="pl-52" src="assets/coin.png">
@@ -105,7 +131,7 @@
               </div>
               <br>
               <br>
-              <div class="card lg:card-side bg-base-100 shadow-xl">
+              <div class="card lg:card-side bg-base-100 shadow-xl"> 
                 <figure>
                   <img src="assets/quota-protest.png">
                 </figure>
@@ -113,38 +139,52 @@
                 <div class="card-body">
                    <div class="flex ">
                     <img src="assets/coin.png">
-                    <p class="pl-2">0 BDT</p>
+                    <p class="pl-2" id="donamnt2">0 BDT</p>
                    </div>
-                  <h2 class="card-title text-4xl">Aid for injured in the Quota Movement</h2>
-                  <p class="text-wrap">he 2024 Bangladesh quota reform movement, also known as the July Revolution,[d] was<br> a series of anti-government[e] and pro-democracy[f] protests in Bangladesh, spearheaded primarily <br>by university students. Initially focused on restructuring quota-based systems for government job recruitment.
-                    <div>
-                      <button class="btn btn-block p-5 ">Donate write Amount </button> 
-                    </div> 
+                  <h2 class="card-title text-4xl">Aid for Injured in the Quota Movement</h2>
+                  <p class="text-wrap">The flood situation in Noakhali has worsened on Saturday<br> following the continuous heavy rainfall for last two days across the district.<br> Among the district's nine upazilas, eight have seen a rise in floodwaters, with Senbagh,<br> Begumganj, Sadar, Sonaimuri, and Chatkhil upazilas being the hardest hit. </p>
+               
+                   
+                  <p>Enter amount:</p><input id="taka2" type="number">
                   
+
+                
                    
-                  <div class="gap-5">
-                   
-                    <a href="#my_modal_8" class="btn bg-lime-400 text-center">Donate Now</a>
+                  <div>
+                      
+                  <a href="#my_modal_4" class="btn bg-lime-400 text-center"  onclick="fundChange2()">Donate Now</a>
+                  <script>
+                    function fundChange2() {
+                      
+                      document.getElementById("donamnt2").innerHTML = document.getElementById("taka2").value + " BDT";
+                      let asd = document.getElementById("donamnt2").value;
+                      var cramt = document.getElementById("crntamnt").innerHTML
+                      document.getElementById("crntamnt").innerHTML = parseInt(cramt) - parseInt(document.getElementById("taka2").value) ;
+
+
+                    }
+                  </script>
 
  
-                    <div class="modal" role="dialog" id="my_modal_8">
+                    <div class="modal" role="dialog" id="my_modal_4">
                    <div class="modal-box">
                    <h3 class=" font-bold text-center text-5xl">Congrates</h3><br>
                    <img class="pl-52" src="assets/coin.png">
-               <p class="py-4 text-center">You have donatd for Noakhali </p>
+               <p class="py-4 text-center">You have a  donatd for Quota Injured. </p>
               <div class="modal-action">
                <a href="#" class="btn text-center ">Close Confirmation</a>
              </div>
              </div>
             </div>
-                 
                   </div>
                 </div>
               </div>
+               
               
               
                
         </section>
+         
           
      
 </body>
